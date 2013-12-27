@@ -10,6 +10,7 @@
         this.update = function () {
            var tree = markdown.parse( input.value );
            // clone = clone_array( tree );
+
           preview.innerHTML = markdown.toHTML(tree);
         };
         input.editor = this;
